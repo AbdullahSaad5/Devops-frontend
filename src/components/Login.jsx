@@ -18,7 +18,7 @@ export default function Login() {
   const onSubmit = async (data) => {
     console.log(data);
     try {
-      const res = await axios.post("http://localhost:3000/users/login", data);
+      const res = await axios.post("http://54.248.31.108:3000/users/login", data);
       console.log(res);
       if (!res.data.success) {
         alert("Invalid credentials");
